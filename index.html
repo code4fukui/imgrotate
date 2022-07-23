@@ -1,0 +1,41 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<body>
+<h1>imgrotate</h1>
+<div>drop an image file to rotate</div>
+<input type=range id=range min=-5000 max=5000>
+<div id=imgc><img src="IMG_1240.JPG"></div>
+<hr>
+<a href=https://github.com/code4fukui/imgrotate/>src on GitHub</a>
+
+<style>
+body {
+  height: 100vh;
+  text-align: center;
+}
+img {
+  width: 60vw;
+  margin: 10vw;
+  z-index: -1;
+  position: relative;
+}
+input {
+  width: 80vw;
+}
+</style>
+
+<script type="module">
+import { setDropImageFileListener } from "https://js.sabae.cc/setDropImageFileListener.js";
+
+setDropImageFileListener(document.body, async (img) => {
+  imgc.innerHTML = "";
+  imgc.appendChild(img);
+});
+
+range.onchange = () => {
+  const th = range.value / 50;
+  const img = imgc.childNodes[0];
+  if (img) {
+    img.style.transform = `rotate(${th}deg)`;
+  }
+};
+</script>
