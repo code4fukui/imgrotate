@@ -6,7 +6,7 @@ A minimalist, client-side web app for rotating images.
 
 ## Demo
 
-**https://code4fukui.github.io/imgrotate/**
+**~~https://code4fukui.github.io/img~~ *(unavailable)*rotate/**
 
 The interface features a large image area and a single slider for control.
 

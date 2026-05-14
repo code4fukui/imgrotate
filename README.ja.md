@@ -4,7 +4,7 @@
 
 ## デモ
 
-**https://code4fukui.github.io/imgrotate/**
+**~~https://code4fukui.github.io/img~~ *(unavailable)*rotate/**
 
 インターフェースは、大きな画像表示エリアと操作用のスライダー1つのみで構成されています。
 
